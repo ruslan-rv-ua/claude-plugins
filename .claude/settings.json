@@ -3,7 +3,7 @@
     "claude-plugins": {
       "source": {
         "source": "github",
-        "repo": "your-username/claude-plugins"
+        "repo": "ruslan-rv-ua/claude-plugins"
       }
     }
   }

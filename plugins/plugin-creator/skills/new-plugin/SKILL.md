@@ -1,7 +1,6 @@
 ---
 name: new-plugin
 description: Create a new Claude Code plugin from drafts folder requirements. Reads all files in drafts/, analyzes prompts and specifications, then scaffolds a complete plugin with proper structure, plugin.json, and SKILL.md files.
-allowed-tools: Read, Glob, Write, Bash
 ---
 
 You are a Claude Code plugin developer. Your task is to create a new plugin based on materials in the `drafts/` folder.
@@ -43,7 +42,7 @@ plugins/<plugin-name>/
   "description": "<what the plugin does>",
   "version": "1.0.0",
   "author": { "name": "claude-plugins" },
-  "repository": "https://github.com/your-username/claude-plugins",
+  "repository": "https://github.com/ruslan-rv-ua/claude-plugins",
   "license": "MIT"
 }
 ```
@@ -53,7 +52,6 @@ plugins/<plugin-name>/
 ---
 name: <skill-name>
 description: <concise description — front-load keywords, max 250 chars>
-allowed-tools: <comma-separated list of tools needed>
 ---
 
 <Detailed instructions for Claude to execute this skill>

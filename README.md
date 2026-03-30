@@ -44,13 +44,13 @@ claude-plugins/
 
 ### Варіант 1 — через GitHub (рекомендовано)
 
-Після того як репозиторій запушено на GitHub (`your-username/claude-plugins`):
+Після того як репозиторій запушено на GitHub (`ruslan-rv-ua/claude-plugins`):
 
 ```
-/plugin marketplace add your-username/claude-plugins
+/plugin marketplace add ruslan-rv-ua/claude-plugins
 ```
 
-> Замініть `your-username` на ваш GitHub username.
+> Замініть `ruslan-rv-ua` на ваш GitHub username.
 
 ### Варіант 2 — локальний шлях
 
@@ -76,7 +76,7 @@ claude-plugins/
     "claude-plugins": {
       "source": {
         "source": "github",
-        "repo": "your-username/claude-plugins"
+        "repo": "ruslan-rv-ua/claude-plugins"
       }
     }
   }
@@ -207,7 +207,7 @@ plugins/my-plugin/
     "name": "Ваше ім'я",
     "email": "you@example.com"
   },
-  "repository": "https://github.com/your-username/claude-plugins",
+  "repository": "https://github.com/ruslan-rv-ua/claude-plugins",
   "license": "MIT"
 }
 ```
@@ -220,7 +220,6 @@ plugins/my-plugin/
 ---
 name: my-skill
 description: Короткий опис що робить скіл і коли використовувати. Починайте з ключових слів (до 250 символів).
-allowed-tools: Read, Write, Bash, Glob, Grep
 ---
 
 Детальні інструкції для Claude що потрібно зробити при виклику цього скілу.
@@ -228,17 +227,18 @@ allowed-tools: Read, Write, Bash, Glob, Grep
 Аргументи доступні через $ARGUMENTS або $0, $1, $2...
 ```
 
-**Корисні параметри SKILL.md:**
+**Підтримувані параметри SKILL.md:**
 
 | Параметр | Опис |
 |---|---|
 | `name` | Назва скілу (lowercase, тільки дефіси) |
 | `description` | Опис для автоматичного визначення контексту |
-| `allowed-tools` | Інструменти без запиту дозволу |
 | `disable-model-invocation: true` | Тільки ручний виклик `/skill` |
-| `context: fork` | Запуск в ізольованому субагенті |
-| `model` | Конкретна модель Claude |
-| `effort` | `low` / `medium` / `high` / `max` |
+| `user-invocable: false` | Прихований від меню `/`, тільки для Claude |
+| `argument-hint` | Підказка про аргументи у меню |
+| `metadata` | Довільні метадані |
+| `license` | Ліцензія |
+| `compatibility` | Сумісність з версіями Claude Code |
 
 ### Реєстрація в marketplace.json
 

@@ -6,7 +6,7 @@
     "name": "claude-plugins"
   },
   "metadata": {
-    "description": "Колекція плагінів для розробки та автоматизації з Claude Code",
+    "description": "Колекція плагінів для розробки та автоматизації з Claude Code — github.com/ruslan-rv-ua/claude-plugins",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
