@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "claude-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "your-username/claude-plugins"
+      }
+    }
+  }
+}

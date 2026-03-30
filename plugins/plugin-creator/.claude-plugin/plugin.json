@@ -1,0 +1,10 @@
+{
+  "name": "plugin-creator",
+  "description": "Інструменти для розробки нових Claude Code плагінів на основі матеріалів з папки drafts",
+  "version": "1.0.0",
+  "author": {
+    "name": "claude-plugins"
+  },
+  "repository": "https://github.com/your-username/claude-plugins",
+  "license": "MIT"
+}

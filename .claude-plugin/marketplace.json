@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-plugins",
+  "description": "Власний маркетплейс Claude Code плагінів",
+  "owner": {
+    "name": "claude-plugins"
+  },
+  "metadata": {
+    "description": "Колекція плагінів для розробки та автоматизації з Claude Code",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "plugin-creator",
+      "source": "./plugins/plugin-creator",
+      "description": "Інструменти для створення нових плагінів на основі матеріалів з папки drafts",
+      "version": "1.0.0",
+      "category": "development",
+      "tags": ["plugin-development", "scaffolding"],
+      "author": {
+        "name": "claude-plugins"
+      }
+    }
+  ]
+}
