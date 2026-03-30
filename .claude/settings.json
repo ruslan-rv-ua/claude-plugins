@@ -6,5 +6,8 @@
         "repo": "ruslan-rv-ua/claude-plugins"
       }
     }
+  },
+  "enabledPlugins": {
+    "plugin-dev@claude-plugins-official": true
   }
 }
