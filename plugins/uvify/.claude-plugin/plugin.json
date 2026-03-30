@@ -1,0 +1,10 @@
+{
+  "name": "uvify",
+  "description": "Transform standalone Python scripts into self-contained, uv-executable scripts by adding PEP 723 inline metadata (# /// script block).",
+  "version": "1.0.0",
+  "author": {
+    "name": "claude-plugins"
+  },
+  "repository": "https://github.com/ruslan-rv-ua/claude-plugins",
+  "license": "MIT"
+}
